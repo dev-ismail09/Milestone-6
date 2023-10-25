@@ -30,6 +30,7 @@ const calculateSalary2 = (salary, tax, bonus) => salary - salary * tax + bonus;
 // 5. spread(...)
 const ages = [11, 13, 15, 14, 16];
 const newAges = [...ages, 22, 24, 21];
+// console.log(newAges)
 
 // destructuring
 const {x, name, ...c} = {x: 45, y: 12, name: 'Sakib Al Hasan', Salary: 450000};

@@ -13,20 +13,20 @@ console.log(keys);
 3 ways to  read object properties
 bottle.color
 bottle['color']
-bottle[key] // variable er modde property name gula asbe seitai system korte hobe
+bottle[key] // - value = property name gula theke value pabo
 */
 for(const key of keys){
     // console.log(bottle[key, bottle[key]]);
 }
 
-//           for of loop - use array , cannot use array
+// ************
+//           for of loop - use array , cannot use object
 // use most: for in loop - use object , cannot use array
 for( const key in bottle ){
     const value = bottle[key];
     console.log(key, value);
 }
-
-
+// ************
 
 // Advanced
 const pair = Object.entries(bottle);

@@ -22,5 +22,5 @@ function displayUser2(data){
         UL.appendChild(li);
         
     }
-    UL.appendChild(li);
+    // UL.appendChild(li); বাইরে এইটা কাজ করবে না
 }

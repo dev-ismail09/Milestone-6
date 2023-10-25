@@ -1,3 +1,5 @@
+// console.log(this); // global 
+
 const ismailHosen = {
     name: 'Ismail Hosen',
     money: 6000,
@@ -10,6 +12,12 @@ const ismailHosen = {
     examArraw: () =>{
         console.log(this);
     },
+    examNested: () =>{
+        const arrow = () =>{
+            console.log(this);
+        }
+        arrow()
+    },
     improveExam: function(subject){
         this.exam(); 
         return `${this.name} is taking improvement exam on ${subject}`
@@ -20,7 +28,19 @@ const ismailHosen = {
     }
 }
 
+ismailHosen.exam();
+
+
+const HemelAli = {
+    name: 'Hemel',
+    money: 8000
+}
+
+HemelAli.exam = ismailHosen.exam;
+HemelAli.exam()
+
 const output = ismailHosen.exam();
 const output2 = ismailHosen.examArraw(); // 1 level up / window pabo
 console.log(output);
 console.log(output2);
+ismailHosen.examNested(); // window pabo 

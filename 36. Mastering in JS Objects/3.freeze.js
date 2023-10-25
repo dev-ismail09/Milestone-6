@@ -13,7 +13,7 @@ const twoDimensionArray = [ [ 'color', 'yellow' ], [ 'price', 50 ], [ 'isCleaned
 
 console.log(bottle);
 Object.seal(bottle); // seal korle r delete korte parbe na but modifacation korte parbe but also new property add korte parbe na
-Object.freeze(bottle); // sobar bap- kisu e kora jabe na ja ase tai it's freeze
+// Object.freeze(bottle); // sobar bap- kisu e kora jabe na ja ase tai it's freeze
 delete bottle.isCleaned;
 bottle.price = 1000;
 bottle.height = 12; // new property add hobe na jodi seal kora thake

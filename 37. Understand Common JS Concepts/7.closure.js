@@ -5,13 +5,13 @@ function stopWatch(){
         return counter;
     }
 }
-const watch1 = stopWatch();
+const watch1 = stopWatch();// প্রতিজন তার নিজের হিসাব রাখবে
 
 const watch2 = stopWatch();
 
 const watch3 = stopWatch();
 
-console.log(watch1());
+console.log(watch1()); 
 console.log(watch1());
 console.log(watch1());
 console.log(watch2());
