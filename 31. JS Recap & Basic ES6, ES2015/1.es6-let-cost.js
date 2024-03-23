@@ -18,7 +18,7 @@ const numbers = [12, 25, 54, 15];
 // numbers = [44, 56, 45, 87];
 // but new value add korte parbo
 numbers.push(123);
-numbers[1] = 90;
+numbers[1] = 90; // replace
 console.log(numbers);
 
 
